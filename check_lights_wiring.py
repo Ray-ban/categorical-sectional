@@ -84,8 +84,10 @@ if __name__ == '__main__':
                 colors[weather.GREEN])
 
             safe_log(LOGGER, "LED {} - {} - Now lit".format(led_index, airport))
-
-            time.sleep(5)
+            #Use the Input function when first setting up LEDs. After the built in test, you can cycle through each LED with the "enter" key
+            input("Press Enter to continue...")
+            #use the Time function when complete with setup and you want to verify each airport is correct. Will cycle through each airport every 5 seconds.
+            #time.sleep(5)
             renderer.set_led(
                 airport_render_config[airport],
                 colors[weather.OFF])
