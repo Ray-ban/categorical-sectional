@@ -85,7 +85,8 @@ if __name__ == '__main__':
 
             safe_log(LOGGER, "LED {} - {} - Now lit".format(led_index, airport))
 
-            time.sleep(5)
+            #time.sleep(5)
+            input("Press Enter to continue...")
             renderer.set_led(
                 airport_render_config[airport],
                 colors[weather.OFF])
